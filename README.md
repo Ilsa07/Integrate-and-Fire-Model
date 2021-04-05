@@ -1,7 +1,7 @@
 # Integrate and Fire Neuron Model
 
 This project illustrates the basic integrate and fire neuron model, which is given by the equation:
-\tau
+$\tau$
 
 ## Getting Started
 1. Clone the project and create a virtual environment
