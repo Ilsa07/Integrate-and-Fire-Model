@@ -23,9 +23,12 @@ def integrate_and_fire_model(external_current:float, simulation_length:float) ->
         # Add the voltage to the array containing the membrane potentials over time
         membrane_potential.append(v)
     
-    return membrane_potential
-
+    # Plot the results of the simulation
+    plt.plot(membrane_potential)
+    plt.xlabel("Time [ms]")
+    plt.ylabel("Voltage")
+    plt.title(f"Simulation results with Excernal current I = {external_current}")
+    plt.show()
+    
 # Run the simulatoin and plot the results
-voltage = integrate_and_fire_model(15, 100)
-plt.plot(voltage)
-plt.show()
+integrate_and_fire_model(15, 100)
