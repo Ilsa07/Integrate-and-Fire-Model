@@ -1,8 +1,6 @@
 import matplotlib.pyplot as plt
 
 
-
-
 def integrate_and_fire_model(external_current:float, simulation_length:float) -> type(None):
     # Neuron Parameters
     spiking_threshold = 10
@@ -31,4 +29,3 @@ def integrate_and_fire_model(external_current:float, simulation_length:float) ->
 voltage = integrate_and_fire_model(15, 100)
 plt.plot(voltage)
 plt.show()
-
